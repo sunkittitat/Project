@@ -1,0 +1,503 @@
+@import url('y=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height:64px;
+    color:#222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height:54px;
+    color:#222;
+}
+
+h4 {
+    font-size: 20px;
+    color:#222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin:15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0 ;
+}
+
+body {
+    width: 100%
+}
+
+/* Header Start */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px 80px;
+    background-color:rgb(246, 246, 246);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+}
+
+#navbar li{
+    list-style: none;
+    padding: 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after, 
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: 12px;
+    left: 20px;
+}
+
+/* Home Page */
+#hero {
+    background-image: url("img/store.PNG");
+    height: 90vh;
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 80% right 0;
+}
+
+#hero h4 {
+    padding-bottom:15px;
+}
+
+#hero h1 {
+    color: #08625c;
+}
+
+#hero button {
+    cursor: pointer;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0 0 white, 10px 10px 0 0 #0f172a;
+    transition-duration: 200ms;
+    color: #088178;
+    border: 0;
+    padding: 8px 14px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#hero button:hover {
+    box-shadow: 3px 3px 0 0 white, 6px 6px 0 0 #0f172a;
+    transform: translate(4px,4px);
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+#feature .fe-box {
+    width: 300px;
+    text-align: left;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px 0, 0, 0, 0.03;
+    border: 1px solid #cce7d0;
+    border-radius: 20px;
+    margin: 15px 0;
+}
+
+#feature .fe-boxes {
+    width: 300px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px 0, 0, 0, 0.03;
+    border: 1px solid #cce7d0;
+    border-radius: 20px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6{
+    padding:9px 8px 6px 8px;
+    line-height:1 ;
+    border-radius: 4px;
+    color:#088178;
+    background-color: hsl(347, 89%, 93%);
+    display: inline-block
+   
+}
+
+#product1 {
+    text-align: center;
+}
+
+
+
+#banner h4{
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner h2 {
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span{
+    color: #ef3636;
+}
+
+#banner {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/Banner/banner.png);
+    width: 100% ;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+#banner button:hover {
+    background: #088178;
+    color: #fff;
+}
+
+#others .others-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/Banner/banner2.png);
+    min-width: 660px ;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+#others {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+button.normal2 {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+#others button:hover {
+    background: #088178;
+    color: #fff;
+}
+
+
+#others .others-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(img/Banner/banner3.png);
+    min-width: 660px ;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+#banner3 .others-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("img/Banner/banner7.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color:rgb(246, 246, 246);
+
+}
+
+#newsletter input {
+    height: 50px;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+
+
+#newsletter .form {
+    display: flex;
+    width: 40%;
+}
+
+
+#newsletter button {
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+footer .follow{
+    margin-top: 20px;
+} 
+
+footer .follow .icon {
+    color: #465b52;
+    padding-right: 40px;
+    cursor: pointer;
+} 
+
+footer .follow i:hover, footer a:hover {
+    color: #088178;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+/* Shop Page */
+
+#page-header {
+    background-image: url("img/shop/shop.PNG");
+    height: 90vh;
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 80% right 0;
+}
+
+#pagination {
+    text-align: center;
+
+}
+
+#pagination a {
+    text-decoration: none;
+    background: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+
+}
+
+/* Single Product */
+
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-details {
+    width: 50%;
+    padding-top: 30px;
+}
+
+#prodetails .single-pro-image {
+        width: 40%;
+        margin-left: 50px;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#prodetails .single-pro-details h4 {
+    padding: 40px 0 20px 0;
+
+}
+
+#prodetails .single-pro-details h2 {
+    font-size: 26px;
+    
+}
+
+#prodetails .single-pro-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    
+}
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+
+#prodetails .single-pro-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details button {
+    background-color: #088178;
+    color: #fff;
+}
+
+#prodetails .single-pro-details span {
+    line-height: 25px;
+}
+/* Blog Page */
+
+
+/* About Page */
